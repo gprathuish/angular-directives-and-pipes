@@ -1,7 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container text-center">
-  <h1>
-    Directives & Pipes
+<div class="container">
+  <h1 class="text-center">
+    ngSwitchCase - Demo
   </h1>
   <hr>
+
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a class="nav-link" [class.active]="tabToShow == 'tab1'" (click)="tabToShow = 'tab1'">Tab 1</a></li>
+    <li class="nav-item"><a class="nav-link" [class.active]="tabToShow == 'tab2'" (click)="tabToShow = 'tab2'">Tab 2</a></li>
+    <li class="nav-item"><a class="nav-link" [class.active]="tabToShow == 'tab3'" (click)="tabToShow = 'tab3'">Tab 3</a></li>
+  </ul>
+
+  <div [ngSwitch]="tabToShow">
+    <ng-template [ngSwitchCase]="'tab1'">
+      <div>Tab 1 Content</div>
+    </ng-template>
+    <div *ngSwitchCase="'tab2'">Tab 2 Content</div>
+    <div *ngSwitchCase="'tab3'">Tab 3 Content</div>
+  </div>
 </div>
