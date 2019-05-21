@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-directives-and-pipes';
+  title = '*ngIf - Demo';
+
+  myCustomArray: Array<number> = [1, 2, 3];
+
 }

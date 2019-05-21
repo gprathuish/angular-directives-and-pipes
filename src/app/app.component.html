@@ -1,7 +1,49 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container text-center">
   <h1>
-    Directives & Pipes
+    {{title}}
   </h1>
   <hr>
+
+  <!-- Actual ngIf syntax -->
+  <!-- <ng-template ngIf="myCustomArray.length > 0">
+    <div>
+      Display the list items here.
+    </div>
+  </ng-template>
+
+  <div *ngIf="myCustomArray.length > 0">
+    Display the list items here.
+  </div> -->
+
+
+  <!-- Regular ngIf -->
+  <!-- <div *ngIf="myCustomArray.length > 0">
+    Display the list items here.
+  </div>
+
+  <div *ngIf="myCustomArray.length == 0">
+    No items to display from array.
+  </div> -->
+
+
+  <!-- ngIf with ELSE -->
+  <!-- <div *ngIf="myCustomArray.length > 0; else elseBlock">
+    Display the list items here.
+  </div>
+
+  <ng-template #elseBlock>
+    No items to display from array.
+  </ng-template> -->
+
+
+  <!-- ngIf with THEN and ELSE -->
+  <!-- <div *ngIf="myCustomArray.length > 0; then thenBlock else elseBlock"></div>
+  <ng-template #thenBlock>
+    Display the list items here.
+  </ng-template>
+
+  <ng-template #elseBlock>
+    No items to
+  </ng-template> -->
 </div>
