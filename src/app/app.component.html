@@ -46,4 +46,14 @@
   <ng-template #elseBlock>
     No items to
   </ng-template> -->
+
+
+  <!-- Hidden Property -->
+  <div [hidden]="myCustomArray.length == 0">
+    Display the list items here.
+  </div>
+
+  <div [hidden]="myCustomArray.length > 0">
+    No items to display from array.
+  </div>
 </div>
