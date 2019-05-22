@@ -1,7 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container text-center">
-  <h1>
-    Directives & Pipes
+<div class="container">
+  <h1 class="text-center">
+    Attribute Directives
   </h1>
   <hr>
+
+  <button (click)="toggleColor()">Toggle</button>
+
+  <p [ngClass]="{'bg-yellow': isRequiredColor}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vitae vel veniam minus magni saepe nemo iure sapiente accusamus laborum voluptates voluptatum, molestias ipsum, ratione architecto expedita corporis. Velit, eaque.</p>
+
+
+  <p [ngStyle]="{'background-color': 'gray', 'color': 'white'}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium officia, quia inventore incidunt nihil ipsum repellat maxime dolorem ab omnis odio alias ex corrupti dignissimos tenetur eos deserunt laudantium?</p>
 </div>
