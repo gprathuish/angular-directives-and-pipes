@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-directives-and-pipes';
+  arrayOfObjects: Array<any> = [
+    {first: 'Kiran', last: 'Kumar'},
+    {first: 'Jhon', last: 'Snow'},
+    {first: 'Karteek', last: 'Kishore'},
+  ]
 }

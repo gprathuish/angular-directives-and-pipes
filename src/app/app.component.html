@@ -1,7 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container text-center">
-  <h1>
-    Directives & Pipes
+<div class="container">
+  <h1 class="text-center">
+    *ngFor
   </h1>
   <hr>
+
+  <ul class="">
+    <li *ngFor="let obj of arrayOfObjects; index as i; even as isEven"><a href="">{{i}}-{{obj.first}} {{obj.last}} --- {{isEven}}</a></li>
+  </ul>
 </div>
