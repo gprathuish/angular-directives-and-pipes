@@ -1,7 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container text-center">
-  <h1>
+<div class="container">
+  <h1 class="text-center">
     Directives & Pipes
   </h1>
   <hr>
+
+  <input type="checkbox" [(ngModel)]="ageRequied">
+
+  <ul>
+    <li *ngFor="let user of (users | ageFilter:ageRequied:'age')">{{user.name}} - {{user.age}}</li>
+  </ul>
+
+
+  <ul>
+    <li *ngFor="let user of (persons | ageFilter:ageRequied:'salary')">{{user.name}} - {{user.salary}}</li>
+  </ul>
 </div>
