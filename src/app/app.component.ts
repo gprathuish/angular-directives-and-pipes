@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-directives-and-pipes';
+  title = 'Angular built in pipes';
+
+  randomNumber = 5.28;
+
+  randomDate = new Date();
 }

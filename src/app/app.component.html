@@ -1,7 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container text-center">
-  <h1>
-    Directives & Pipes
+<div class="container">
+  <h1 class="text-center">
+    Built In Pipes
   </h1>
   <hr>
+
+  <h5>{{title}}</h5>
+  <h5>{{title | uppercase}}</h5>
+  <h5>{{title | lowercase}}</h5>
+  <h5>{{title | titlecase}}</h5>
+
+
+  <h5>{{randomNumber}}</h5>
+  <h5>{{randomNumber | number:'2.3-6'}}</h5>
+  <h5>{{randomNumber | number:'.0-1'}}</h5>
+  <h5>{{randomNumber | number:'0.2-2'}}</h5>
+
+
+  <h5>{{randomDate}}</h5>
+  <h5>{{randomDate | date:'short'}}</h5>
+  <h5>{{randomDate | date:'shortDate'}}</h5>
+  <h5>{{randomDate | date:'shortTime'}}</h5>
+  <h5>{{randomDate | date:'medium'}}</h5>
+  <h5>{{randomDate | date:'long'}}</h5>
+  <h5>{{randomDate | date:'yyyy/MM/dd'}}</h5>
 </div>
